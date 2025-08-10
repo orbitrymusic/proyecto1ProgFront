@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Cartón de Bingo</title>
+</head>
+<body>
+    <div class="bingo-wrapper">
+        <header class="bingo-header">
+            <div class="header-celda">B</div>
+            <div class="header-celda">I</div>
+            <div class="header-celda">N</div>
+            <div class="header-celda">G</div>
+            <div class="header-celda">O</div>
+        </header>
+        
+        <div  class="container"  id="bingo-card"> <!--sacar los atributos data-index y data-col si no se utilizan en la version futura  -->
+        <div class="element" data-index="1" data-col="B"></div> 
+        <div class="element" data-index="2" data-col="B"></div>
+        <div class="element" data-index="3" data-col="B"></div>
+        <div class="element" data-index="4" data-col="B"></div>
+        <div class="element" data-index="5" data-col="B"></div>
+        <div class="element" data-index="6" data-col="I"></div>
+        <div class="element" data-index="7" data-col="I"></div>
+        <div class="element" data-index="8" data-col="I"></div>
+        <div class="element" data-index="9" data-col="I"></div>
+        <div class="element" data-index="1" data-col="I"></div>
+        <div class="element" data-index="11" data-col="N"></div>
+        <div class="element" data-index="12" data-col="N"></div>
+        <div class="element free" data-index="13" data-col="N"></div>
+        <div class="element" data-index="14" data-col="N"></div>
+        <div class="element" data-index="15" data-col="N"></div>
+        <div class="element" data-index="16" data-col="G"></div>
+        <div class="element" data-index="17" data-col="G"></div>
+        <div class="element" data-index="18" data-col="G"></div>
+        <div class="element" data-index="19" data-col="G"></div>
+        <div class="element" data-index="2" data-col="G"></div>
+        <div class="element" data-index="21" data-col="O"></div>
+        <div class="element" data-index="22" data-col="O"></div>
+        <div class="element" data-index="23" data-col="O"></div>
+        <div class="element" data-index="24" data-col="O"></div>
+        <div class="element" data-index="25" data-col="O"></div>
+        </div>
+    </div>
+     <button id="generate-btn">Generar nuevo cartón</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+ .bingo-wrapper { /*Se utiliza grid para el div.bingo-wrapper*/
+  width: 90vw; /*¡ver esto! supuestamente deberia ocupar el 90% del ancho de la ventana grafica, viewport width*/
+  max-width: 400px;/*400px*/
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Header */
+.bingo-header {
+  display: contents; /* permite que las celdas se alineen con el grid del wrapper */
+}
+
+.header-celda {/*Aca se utiliza flexbox para centrar contenido de celda*/
+  background-color: #333;
+  color: aquamarine;
+  font-size: 1.5rem;
+  font-weight: bold;
+  aspect-ratio: 1 / 1; /*esto es para mantener la casillas cuadradas indistintamente del dispositivo*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #555;
+}
+
+/* Cartón */
+.container {
+  display: contents; /* igual que el header, para que las celdas se alineen en el mismo grid */
+} 
+
+.element {/*Aca se utiliza flexbox para centrar contenido de celda*/
+  background-color: #cb6969;
+  color: aquamarine;
+  font-size: 1.2rem;
+  font-weight: bold;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #555;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Celda marcada */
+.element.marked {
+  background-color: rgb(13, 185, 99);
+  color: #222;
+  text-decoration: line-through;
+}
+
+/* Celda central gratis */
+.element-free {
+  background-color: #444;
+  color: gold;
+}
+
+/* Botón */
+#generate-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #444;
+  color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+  background-color: #666;
+}
+
